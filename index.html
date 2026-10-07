@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AL HABIB WORLD TRAVEL & TOURS | الحبیب ورلڈ ٹریول اینڈ ٹورز</title>
+  <meta name="description" content="AL HABIB WORLD TRAVEL & TOURS - Premium Umrah & Hajj Packages, Worldwide Air Tickets, International & Domestic Tours, and Express Visa Services.">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <!-- Main & Motion CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/motion.css">
+</head>
+<body class="rtl-mode">
+
+  <!-- ==========================================================================
+       FLASH PROMO COUNTDOWN BAR
+       ========================================================================== -->
+  <div class="promo-bar">
+    <div class="container promo-container">
+      <div class="promo-left">
+        <span class="promo-badge" data-i18n="deal_badge">محدود وقت کی پیشکش</span>
+        <span class="promo-title" data-i18n="deal_title">🌙 رمضان المبارک و سیزنل عمرہ پیکیجز پر 15 فیصد تک خصوصی بچت! محدود نشستیں باقی</span>
+      </div>
+      <div class="countdown-box">
+        <div class="timer-unit">
+          <div class="timer-num" id="cdDays">14</div>
+          <div class="timer-label" data-i18n="deal_days">دن</div>
+        </div>
+        <div class="timer-unit">
+          <div class="timer-num" id="cdHours">08</div>
+          <div class="timer-label" data-i18n="deal_hours">گھنٹے</div>
+        </div>
+        <div class="timer-unit">
+          <div class="timer-num" id="cdMins">45</div>
+          <div class="timer-label" data-i18n="deal_minutes">منٹ</div>
+        </div>
+        <div class="timer-unit">
+          <div class="timer-num" id="cdSecs">20</div>
+          <div class="timer-label" data-i18n="deal_seconds">سیکنڈ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       1. TOP BAR WITH CURRENCY SELECTOR
+       ========================================================================== -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-left">
+        <div class="topbar-item">
+          <i class="fas fa-phone-alt"></i>
+          <span data-i18n="topbar_call">ہم سے رابطہ کریں: 1234567 300 92+ | 35789000 42 92+</span>
+        </div>
+        <div class="topbar-item">
+          <i class="fas fa-envelope"></i>
+          <span data-i18n="topbar_email">info@alhabibtravels.com</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <!-- Currency Selector -->
+        <div class="currency-selector-box">
+          <i class="fas fa-coins" style="color: var(--accent-gold);"></i>
+          <span data-i18n="currency_label">کرنسی:</span>
+          <select class="currency-select" id="currencySelector" aria-label="Currency Selector">
+            <option value="PKR">PKR (Rs)</option>
+            <option value="USD">USD ($)</option>
+            <option value="SAR">SAR (﷼)</option>
+            <option value="AED">AED (د.إ)</option>
+          </select>
+        </div>
+
+        <div class="topbar-item iata-badge">
+          <i class="fas fa-certificate"></i>
+          <span data-i18n="topbar_iata">آئی اے ٹی اے (IATA) منظور شدہ #96-2-1234</span>
+        </div>
+
+        <!-- Language Switcher Button -->
+        <button class="lang-switch-btn" title="Switch Language / زبان تبدیل کریں">
+          <i class="fas fa-globe"></i>
+          <span class="lang-btn-text">English</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. NAVIGATION HEADER
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <div class="brand-icon-box">
+          <i class="fas fa-kaaba"></i>
+        </div>
+        <div class="brand-text-box">
+          <span class="brand-title" data-i18n="nav_brand_title">AL HABIB</span>
+          <span class="brand-tagline" data-i18n="nav_brand_tagline">WORLD TRAVEL & TOURS</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active" data-i18n="nav_home">صفحہ اول</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">ہمارے بارے میں</a>
+        <a href="#calculator" class="nav-link" data-i18n="nav_calc">خرچ کیلکولیٹر</a>
+        <a href="#umrah" class="nav-link" data-i18n="nav_umrah">عمرہ و حج پیکیجز</a>
+        <a href="#packages" class="nav-link" data-i18n="nav_packages">ٹور پیکیجز</a>
+        <a href="#flights" class="nav-link" data-i18n="nav_flights">فضائی ٹکٹ</a>
+        <a href="#visas" class="nav-link" data-i18n="nav_visas">ویزا سروسز</a>
+        <a href="#gallery" class="nav-link" data-i18n="nav_gallery">مقامات</a>
+        <a href="#reviews" class="nav-link" data-i18n="nav_reviews">صارفین کی رائے</a>
+        <a href="#faqs" class="nav-link" data-i18n="nav_faqs">عام سوالات</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">رابطہ کریں</a>
+      </nav>
+
+      <!-- CTA & Mobile Toggle -->
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-gold btn-sm" data-i18n="btn_get_quote">مشاورت حاصل کریں</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       3. HERO SECTION WITH DYNAMIC BACKGROUND & GLASS BOOKING ENGINE
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <!-- Motion Canvas Layer (Interactive Flight Paths & Constellations) -->
+    <div class="hero-canvas-wrap">
+      <canvas id="motionCanvas"></canvas>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-rating-badge">
+        <i class="fas fa-star"></i>
+        <span data-i18n="hero_rating_badge">★ 4.9/5 گوگل ریٹنگ | 45,000 سے زائد مطمئن زائرین و مسافر</span>
+      </div>
+
+      <!-- PROMINENT AGENCY NAME (FRONT & CENTER) -->
+      <div class="hero-brand-display">
+        <h1 class="hero-agency-title">
+          <span class="agency-gold-glow" data-i18n="hero_agency_main">الحبیب</span>
+          <span class="agency-white-title" data-i18n="hero_agency_sub">ورلڈ ٹریول اینڈ ٹورز</span>
+        </h1>
+        <div class="hero-title-divider">
+          <span></span>
+          <i class="fas fa-plane-departure"></i>
+          <span></span>
+        </div>
+      </div>
+
+      <h2 class="hero-tagline-title" data-i18n="hero_title">مکمل اطمینان، وقار اور آسانی کے ساتھ دنیا کی سیر کریں</h2>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">الحبیب ورلڈ ٹریول اینڈ ٹورز: 15 سالہ شاندار تجربہ — معیاری عمرہ و حج پیکیجز، ملکی و غیر ملکی ایئر ٹکٹس، دلکش سیاحتی ٹورز اور فوری ویزا سروسز۔</p>
+      
+      <div class="hero-actions">
+        <a href="#packages" class="btn btn-gold" data-i18n="btn_explore_packages">ٹور پیکیجز دیکھیں</a>
+        <a href="#umrah" class="btn btn-outline-white" data-i18n="btn_umrah_deals">عمرہ پیکیجز دیکھیں</a>
+      </div>
+
+      <!-- Quick Interactive Travel Booking Engine -->
+      <div class="booking-engine">
+        <div class="booking-tabs">
+          <button class="tab-btn active" data-tab="tabFlights">
+            <i class="fas fa-plane"></i>
+            <span data-i18n="tab_flights">فضائی ٹکٹ</span>
+          </button>
+          <button class="tab-btn" data-tab="tabUmrah">
+            <i class="fas fa-kaaba"></i>
+            <span data-i18n="tab_umrah">عمرہ / حج</span>
+          </button>
+          <button class="tab-btn" data-tab="tabTours">
+            <i class="fas fa-map-marked-alt"></i>
+            <span data-i18n="tab_tours">سیاحتی ٹورز</span>
+          </button>
+          <button class="tab-btn" data-tab="tabHotels">
+            <i class="fas fa-hotel"></i>
+            <span data-i18n="tab_hotels">ہوٹل بکنگ</span>
+          </button>
+          <button class="tab-btn" data-tab="tabVisas">
+            <i class="fas fa-passport"></i>
+            <span data-i18n="tab_visas">ویزا معلومات</span>
+          </button>
+        </div>
+
+        <!-- Tab 1: Flights Form -->
+        <div class="tab-pane active" id="tabFlights">
+          <form class="search-form-grid">
+            <div class="form-group">
+              <label data-i18n="flight_from">روانگی کا شہر</label>
+              <div class="input-with-icon">
+                <i class="fas fa-plane-departure"></i>
+                <input type="text" data-i18n-placeholder="flight_from" placeholder="لاہور، اسلام آباد، کراچی" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-i18n="flight_to">منزل کا شہر</label>
+              <div class="input-with-icon">
+                <i class="fas fa-plane-arrival"></i>
+                <input type="text" data-i18n-placeholder="flight_to" placeholder="دبئی، جدہ، لندن، استنبول" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-i18n="flight_date">روانگی کی تاریخ</label>
+              <div class="input-with-icon">
+                <i class="fas fa-calendar-alt"></i>
+                <input type="date" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-i18n="flight_class">کلاس (اکانومی / بزنس)</label>
+              <div class="input-with-icon">
+                <i class="fas fa-chair"></i>
+                <select>
+                  <option value="economy">Economy / اکانومی</option>
+                  <option value="business">Business / بزنس</option>
+                  <option value="first">First Class / فرسٹ کلاس</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block" data-i18n="btn_search_flights">پروازیں تلاش کریں</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Tab 2: Umrah Form -->
+        <div class="tab-pane" id="tabUmrah">
+          <form class="search-form-grid">
+            <div class="form-group">
+              <label data-i18n="umrah_package_type">پیکیج کی قسم منتخب کریں</label>
+              <div class="input-with-icon">
+                <i class="fas fa-mosque"></i>
+                <select>
+                  <option value="economy">Economy Package (اکانومی پیکیج)</option>
+                  <option value="star4">4-Star Executive (4 اسٹار ایگزیکٹو)</option>
+                  <option value="vip5">5-Star VIP Royal (5 اسٹار رائل)</option>
+                  <option value="custom">Custom Family Package (کسٹم فیملی)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-i18n="umrah_duration">مدت (دن)</label>
+              <div class="input-with-icon">
+                <i class="fas fa-clock"></i>
+                <select>
+                  <option value="10">10 Days (10 دن)</option>
+                  <option value="14" selected>14 / 15 Days (14 تا 15 دن)</option>
+                  <option value="21">21 Days (21 دن)</option>
+                  <option value="28">28 Days (28 دن)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-i18n="umrah_travelers">افراد کی تعداد</label>
+              <div class="input-with-icon">
+                <i class="fas fa-user-friends"></i>
+                <input type="number" min="1" max="50" value="2">
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-gold btn-block" data-i18n="btn_search_umrah">عمرہ ڈیلز دیکھیں</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Tab 3: Tours Form -->
+        <div class="tab-pane" id="tabTours">
+          <form class="search-form-grid">
+            <div class="form-group">
+              <label data-i18n="tour_destination">آپ کس ملک یا شہر جانا چاہتے ہیں؟</label>
+              <div class="input-with-icon">
+                <i class="fas fa-location-arrow"></i>
+                <input type="text" data-i18n-placeholder="tour_destination" placeholder="دبئی، ترکی، باکو، اسکردو...">
+              </div>
+            </div>
+            <div class="form-group">
+              <label data-i18n="tour_type">ٹور کی قسم</label>
+              <div class="input-with-icon">
+                <i class="fas fa-umbrella-beach"></i>
+                <select>
+                  <option value="all">تمام ٹورز</option>
+                  <option value="family">Family Tour (خاندانی ٹور)</option>
+                  <option value="honeymoon">Honeymoon (ہنیمون اسپیشل)</option>
+                  <option value="adventure">Northern Adventure (شمالی علاقہ جات)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block" data-i18n="btn_search_tours">ٹورز تلاش کریں</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Tab 4: Hotels Form -->
+        <div class="tab-pane" id="tabHotels">
+          <form class="search-form-grid">
+            <div class="form-group">
+              <label>City or Hotel Name / شہر یا ہوٹل کا نام</label>
+              <div class="input-with-icon">
+                <i class="fas fa-hotel"></i>
+                <input type="text" placeholder="Makkah, Madinah, Dubai, Istanbul...">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Check-in / آمد کی تاریخ</label>
+              <div class="input-with-icon">
+                <i class="fas fa-calendar-check"></i>
+                <input type="date">
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block">Find Best Hotels</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Tab 5: Visas Form -->
+        <div class="tab-pane" id="tabVisas">
+          <form class="search-form-grid">
+            <div class="form-group">
+              <label data-i18n="visa_country">ویزا کے لئے مطلوبہ ملک</label>
+              <div class="input-with-icon">
+                <i class="fas fa-globe-asia"></i>
+                <select>
+                  <option value="dubai">United Arab Emirates (Dubai)</option>
+                  <option value="saudi">Saudi Arabia (Umrah / Tourist)</option>
+                  <option value="turkey">Turkey Tourist Visa</option>
+                  <option value="baku">Azerbaijan (Baku) e-Visa</option>
+                  <option value="malaysia">Malaysia & Thailand</option>
+                  <option value="uk">UK, USA & Schengen Europe</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-gold btn-block" data-i18n="btn_search_visas">شرائط و دستاویزات معلوم کریں</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. KEY STATS & TRUST COUNTERS
+       ========================================================================== -->
+  <section class="container">
+    <div class="stats-bar">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="15" data-suffix="+">15+</div>
+          <div class="stat-label" data-i18n="stat_experience">سالہ بے مثال تجربہ</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="45000" data-suffix="+">45,000+</div>
+          <div class="stat-label" data-i18n="stat_clients">مطمئن مسافر</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="18000" data-suffix="+">18,000+</div>
+          <div class="stat-label" data-i18n="stat_umrah">عمرہ زائرین کی خدمت</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="99" data-suffix="%">99%</div>
+          <div class="stat-label" data-i18n="stat_visa_rate">ویزا کامیابی کی شرح</div>
+        </div>
+      </div>
+
+      <!-- Trust Badges & Accreditations -->
+      <div class="accreditation-strip">
+        <div class="accred-badge"><i class="fas fa-shield-alt"></i> IATA Accredited Agent #96-2-1234</div>
+        <div class="accred-badge"><i class="fas fa-landmark"></i> Ministry of Religious Affairs Approved</div>
+        <div class="accred-badge"><i class="fas fa-check-circle"></i> Dept. of Tourist Services (DTS) Certified</div>
+        <div class="accred-badge"><i class="fas fa-handshake"></i> TAAP Official Corporate Member</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       NEXT-GEN 2026 MOTION GRAPHICS & INTERACTIVE FLIGHT RADAR SECTION
+       ========================================================================== -->
+  <section class="bento-section" id="radarSection">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.4);" data-i18n="bento_badge">جدید لائیو موشن ٹریول ہب</span>
+        <h2 class="section-title" data-i18n="bento_title">نیکسٹ جنریشن لائیو ٹریول کنٹرول میٹرکس</h2>
+        <p class="section-subtitle" data-i18n="bento_subtitle">جدید ترین موشن گرافکس، لائیو فلائٹ سمیلیشن، عالمی حرمین کلاکس، اور ٹیلی میٹری ریڈار کا براہِ راست تجربہ کریں۔</p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Bento 1: Interactive Flight Radar Simulator -->
+        <div class="bento-box bento-radar-box" data-tilt>
+          <div class="radar-header">
+            <div>
+              <h3 style="font-size: 1.3rem; font-weight: 800; color: #fff;" data-i18n="radar_title">انٹرایکٹو لائیو فلائٹ سمیلیٹر</h3>
+              <p style="font-size: 0.82rem; color: #94a3b8;" data-i18n="radar_sub">لائیو روٹ ٹریکنگ اور فضائی ٹیلی میٹری</p>
+            </div>
+            <div class="radar-badge-live">
+              <span class="radar-live-dot"></span>
+              <span data-i18n="radar_live_tag">لائیو سمیلیشن راڈار فعال ہے</span>
+            </div>
+          </div>
+
+          <!-- Route Selector Buttons -->
+          <div class="radar-route-buttons">
+            <button class="radar-route-btn active" data-route="jeddah" data-i18n="btn_route_jeddah">لاہور ➔ جدہ (خصوصی عمرہ روٹ)</button>
+            <button class="radar-route-btn" data-route="dubai" data-i18n="btn_route_dubai">اسلام آباد ➔ دبئی (ایکسپریس)</button>
+            <button class="radar-route-btn" data-route="istanbul" data-i18n="btn_route_istanbul">کراچی ➔ استنبول (ڈائریکٹ)</button>
+            <button class="radar-route-btn" data-route="london" data-i18n="btn_route_london">لاہور ➔ لندن ہیتھرو</button>
+          </div>
+
+          <!-- HUD Display -->
+          <div class="flight-hud-display">
+            <div class="flight-cities-banner">
+              <div class="hud-city-box">
+                <span style="font-size: 0.72rem; color: #94a3b8;">ORIGIN / روانگی</span>
+                <h4 id="radarOrigin">Lahore (LHE)</h4>
+              </div>
+              <div class="hud-flight-icon">
+                <i class="fas fa-plane"></i>
+              </div>
+              <div class="hud-city-box" style="text-align: right;">
+                <span style="font-size: 0.72rem; color: #94a3b8;">DESTINATION / منزل</span>
+                <h4 id="radarDest">Jeddah (JED) - Umrah</h4>
+              </div>
+            </div>
+
+            <!-- Dynamic Progress Track Bar -->
+            <div class="flight-track-bar">
+              <div class="flight-track-progress" id="radarProgressBar" style="width: 68%;"></div>
+              <div class="flight-plane-marker" id="radarPlaneIcon" style="left: 68%;">
+                <i class="fas fa-plane"></i>
+              </div>
+            </div>
+
+            <!-- Real-time Telemetry Readout -->
+            <div class="flight-hud-telemetry">
+              <div class="telem-item">
+                <span class="telem-label">CRUISE ALTITUDE</span>
+                <span class="telem-val" id="radarAlt">38,000 FT</span>
+              </div>
+              <div class="telem-item">
+                <span class="telem-label">GROUND SPEED</span>
+                <span class="telem-val accent" id="radarSpd">865 KM/H</span>
+              </div>
+              <div class="telem-item">
+                <span class="telem-label">TOTAL DISTANCE</span>
+                <span class="telem-val" id="radarDist">4,120 KM</span>
+              </div>
+              <div class="telem-item">
+                <span class="telem-label">EST. TIME REMAINING</span>
+                <span class="telem-val accent" id="radarTime">04:55 hrs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="radar-status-bar">
+            <span><i class="fas fa-satellite"></i> <strong id="radarStatus">En Route to King Abdulaziz Airport</strong></span>
+            <a href="#contact" class="btn btn-gold btn-sm" style="padding: 6px 16px;">Book This Route</a>
+          </div>
+        </div>
+
+        <!-- Bento 2: Live Sanctuary & World Clocks -->
+        <div class="bento-box bento-clocks-box" data-tilt>
+          <h3><i class="far fa-clock"></i> <span>Global Sanctuary Clocks</span></h3>
+          <div class="world-clocks-grid">
+            <div class="clock-card holy">
+              <div class="clock-location" data-i18n="clock_makkah_title">مکہ مکرمہ الشریف</div>
+              <div class="clock-subtag" data-i18n="clock_makkah_tag">حرم مکی کا سرکاری وقت (AST)</div>
+              <div class="clock-time" id="clockMakkah">--:--:--</div>
+            </div>
+            <div class="clock-card holy">
+              <div class="clock-location" data-i18n="clock_madinah_title">مدینہ منورہ الشریف</div>
+              <div class="clock-subtag" data-i18n="clock_madinah_tag">مسجد نبوی الشریف وقت (AST)</div>
+              <div class="clock-time" id="clockMadinah">--:--:--</div>
+            </div>
+            <div class="clock-card">
+              <div class="clock-location" data-i18n="clock_dubai_title">دبئی، متحدہ عرب امارات</div>
+              <div class="clock-subtag" data-i18n="clock_dubai_tag">گلف اسٹینڈرڈ وقت (GST)</div>
+              <div class="clock-time" id="clockDubai">--:--:--</div>
+            </div>
+            <div class="clock-card">
+              <div class="clock-location" data-i18n="clock_london_title">لندن، برطانیہ</div>
+              <div class="clock-subtag" data-i18n="clock_london_tag">گرینچ مین ٹائم (GMT)</div>
+              <div class="clock-time" id="clockLondon">--:--:--</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bento 3: Quick VIP Direct Concierge -->
+        <div class="bento-box bento-vip-box" data-tilt>
+          <div class="vip-content">
+            <span class="section-badge" style="background: rgba(197, 155, 39, 0.2); color: var(--accent-gold-light); margin-bottom: 8px;">24/7 VIP CONCIERGE</span>
+            <h3>VIP Travel Privilege</h3>
+            <p>Direct priority line for corporate executives, VIP Umrah groups, and private chartered transfers.</p>
+            <ul class="vip-perks-list">
+              <li><i class="fas fa-check-circle"></i> Private GMC Yukon / Mercedes Chauffeur</li>
+              <li><i class="fas fa-check-circle"></i> Clock Tower / Haram Front Luxury Suites</li>
+              <li><i class="fas fa-check-circle"></i> Fast-Track Airport Lounges & Protocol</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20am%20interested%20in%20Al%20Habib%20VIP%20Privilege%20Services" target="_blank" class="btn btn-whatsapp btn-block">
+            <i class="fab fa-whatsapp"></i> Chat with Senior Executive
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. ABOUT US SECTION
+       ========================================================================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Visual Column -->
+        <div class="about-image-stack">
+          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80" alt="Al Habib World Travel" class="about-img-main">
+          <div class="about-experience-card">
+            <div class="exp-number">15+</div>
+            <div class="exp-text">Years of Trusted Services / سالہ قابل اعتماد خدمات</div>
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="about-content">
+          <span class="section-badge" data-i18n="about_badge">ہمارا تعارف</span>
+          <h2 data-i18n="about_title">الحبیب ورلڈ ٹریول اینڈ ٹورز - 2010 سے خدمات کا قابل اعتماد نام</h2>
+          <p class="about-p" data-i18n="about_p1">الحبیب ورلڈ ٹریول اینڈ ٹورز میں ہمارا پختہ یقین ہے کہ ہر سفر زندگی کا ایک یادگار باب ہوتا ہے۔ پاکستان میں قائم اور عالمی ایئرلائنز و ہوٹلوں سے منسلک، ہم خاندانوں، زائرین اور کاروباری افراد کے لئے اعلیٰ ترین سفری سہولیات فراہم کرتے ہیں۔</p>
+          <p class="about-p" data-i18n="about_p2">چاہے آپ عمرہ یا حج کی بابرکت سعادت حاصل کرنا چاہتے ہوں، بین الاقوامی فلائٹس کی بکنگ درکار ہو، دلکش تعطیلات کی منصوبہ بندی ہو یا کسی ملک کا ویزا درکار ہو، ہمارے تجربہ کار کنسلٹنٹس ہر قدم پر آپ کے شانہ بشانہ رہتے ہیں۔</p>
+
+          <div class="about-features-list">
+            <div class="about-feature-item">
+              <div class="about-feature-icon"><i class="fas fa-award"></i></div>
+              <div class="about-feature-text">
+                <h4 data-i18n="about_f1_title">سرکاری منظور شدہ و لائسنس یافتہ</h4>
+                <p data-i18n="about_f1_desc">وزارتِ مذہبی امور، ڈی ٹی ایس حکومتِ پاکستان اور آئی اے ٹی اے (IATA) سے باقاعدہ تصدیق شدہ۔</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <div class="about-feature-icon"><i class="fas fa-tags"></i></div>
+              <div class="about-feature-text">
+                <h4 data-i18n="about_f2_title">بہترین قیمت کی ضمانت</h4>
+                <p data-i18n="about_f2_desc">عالمی ایئرلائنز اور انٹرنیشنل ہوٹل چینز سے براہِ راست شراکت داری کے باعث سب سے کم ریٹس۔</p>
+              </div>
+            </div>
+            <div class="about-feature-item">
+              <div class="about-feature-icon"><i class="fas fa-headset"></i></div>
+              <div class="about-feature-text">
+                <h4 data-i18n="about_f3_title">24/7 ہمہ وقت معاونت</h4>
+                <p data-i18n="about_f3_desc">سفر کے دوران اور بعد میں آپ کی رہنمائی اور ایمرجنسی سپورٹ کے لئے ہماری ٹیم ہر وقت حاضر۔</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary" data-i18n="about_btn">ہمارے متعلق مزید جانیں</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. INTERACTIVE UMRAH COST CALCULATOR SECTION
+       ========================================================================== -->
+  <section class="calc-section" id="calculator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" style="background: rgba(255,255,255,0.15); color: var(--accent-gold-light); border-color: var(--accent-gold);" data-i18n="calc_badge">اسمارٹ تخمینہ ٹول</span>
+        <h2 class="section-title" data-i18n="calc_title">آن لائن عمرہ پیکیج خرچ کیلکولیٹر</h2>
+        <p class="section-subtitle" data-i18n="calc_subtitle">اپنی پسند کے ہوٹل کا معیار، قیام کے دن اور روم کی قسم منتخب کر کے سیکنڈوں میں اپنے عمرہ پیکیج کا تخمینہ حاصل کریں۔</p>
+      </div>
+
+      <div class="calc-box-wrapper">
+        <div class="calc-grid">
+          <!-- Inputs Column -->
+          <div class="calc-inputs-col">
+            <div class="calc-field-group">
+              <label data-i18n="calc_lbl_tier">پیکیج کا معیار</label>
+              <select class="calc-select" id="calcTier">
+                <option value="economy" selected data-i18n="calc_opt_eco">اکانومی اسٹینڈرڈ (مفت شٹل سروس)</option>
+                <option value="star4" data-i18n="calc_opt_4star">4-اسٹار ایگزیکٹو (صرف 250 میٹر واکنگ)</option>
+                <option value="vip5" data-i18n="calc_opt_5star">5-اسٹار رائل وی آئی پی (حرم فرنٹ رو ویو)</option>
+              </select>
+            </div>
+
+            <div class="calc-field-group">
+              <label data-i18n="calc_lbl_days">سفر کی مدت</label>
+              <select class="calc-select" id="calcDays">
+                <option value="7" data-i18n="calc_days_7">7 دن / 6 راتیں</option>
+                <option value="10" data-i18n="calc_days_10">10 دن / 9 راتیں</option>
+                <option value="14" selected data-i18n="calc_days_14">14 دن / 13 راتیں</option>
+                <option value="21" data-i18n="calc_days_21">21 دن / 20 راتیں</option>
+              </select>
+            </div>
+
+            <div class="calc-field-group">
+              <label data-i18n="calc_lbl_room">کمرے کی تقسیم (روم شیئرنگ)</label>
+              <select class="calc-select" id="calcRoom">
+                <option value="quad" selected data-i18n="calc_room_quad">کواڈ شیئرنگ (4 بیڈز)</option>
+                <option value="triple" data-i18n="calc_room_triple">ٹرپل شیئرنگ (3 بیڈز)</option>
+                <option value="double" data-i18n="calc_room_double">ڈبل شیئرنگ (2 افراد روم)</option>
+                <option value="single" data-i18n="calc_room_single">سنگل پرائیویٹ وی آئی پی روم</option>
+              </select>
+            </div>
+
+            <div class="calc-field-group">
+              <label data-i18n="calc_lbl_persons">زائرین کی تعداد</label>
+              <input type="number" class="calc-input" id="calcPersons" min="1" max="25" value="2">
+            </div>
+          </div>
+
+          <!-- Calculation Result Display Column -->
+          <div class="calc-result-card">
+            <div class="calc-res-label" data-i18n="calc_est_total">پیکیج کا کل متوقع خرچ:</div>
+            <div class="calc-res-amount" id="calcTotalDisplay">430,000 روپے</div>
+            <div class="calc-res-per-person">
+              <span data-i18n="calc_per_person">فی کس تخمینہ:</span>
+              <strong id="calcPerPersonDisplay">215,000 روپے</strong>
+            </div>
+
+            <a href="https://wa.me/923001234567" id="calcWhatsappBtn" target="_blank" class="btn btn-whatsapp btn-block">
+              <i class="fab fa-whatsapp"></i> <span data-i18n="btn_calc_whatsapp">یہ کوٹیشن واٹس ایپ پر حاصل کریں</span>
+            </a>
+
+            <p class="calc-note" data-i18n="calc_includes_note">*اس میں ویزا، واپسی ایئر ٹکٹ، ہوٹل، ٹرانسپورٹ اور تاریخی زیارات شامل ہیں۔</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. SPECIAL UMRAH & HAJJ SERVICES
+       ========================================================================== -->
+  <section class="umrah-section" id="umrah">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge umrah-badge-header" data-i18n="umrah_badge">مقدس اور بابرکت سفر</span>
+        <h2 class="section-title" data-i18n="umrah_title">خصوصی عمرہ و حج پیکیجز 1448 / 2026</h2>
+        <p class="section-subtitle" data-i18n="umrah_subtitle">مکہ مکرمہ اور مدینہ منورہ میں حرمین شریفین کے قریب ترین ہوٹلز، آرام دہ ٹرانسپورٹ اور تجربہ کار معلم کی رہنمائی میں عمرہ ادا کریں۔</p>
+      </div>
+
+      <div class="umrah-grid">
+        <!-- Package 1: Economy -->
+        <div class="umrah-card" data-tilt>
+          <div class="umrah-card-image">
+            <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=600&q=80" alt="Economy Umrah Package">
+          </div>
+          <div class="umrah-card-body">
+            <h3 class="umrah-card-title" data-i18n="pkg_economy_title">اکانومی عمرہ پیکیج</h3>
+            <div class="umrah-duration">
+              <i class="far fa-clock"></i>
+              <span data-i18n="pkg_economy_days">14 دن / 13 راتیں</span>
+            </div>
+            
+            <div class="hotel-distance-box">
+              <div class="dist-item">
+                <i class="fas fa-kaaba"></i>
+                <span data-i18n="pkg_economy_makkah">مکہ: حرم سے 600 میٹر (مفت شٹل سروس)</span>
+              </div>
+              <div class="dist-item">
+                <i class="fas fa-mosque"></i>
+                <span data-i18n="pkg_economy_madinah">مدینہ: مسجد نبوی سے 400 میٹر واکنگ فاصلہ</span>
+              </div>
+            </div>
+
+            <ul class="pkg-features-list">
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="pkg_economy_f1">براہِ راست واپسی ایئر ٹکٹ</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="pkg_economy_f2">مکمل عمرہ ویزا اور انشورنس شامل</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="pkg_economy_f3">ائیرکنڈیشنڈ بس ٹرانسپورٹ</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="pkg_economy_f4">تمام تاریخی زیارات شامل</span></li>
+            </ul>
+
+            <div class="pkg-pricing-box">
+              <span class="pkg-price-label" data-i18n="pkg_price_from">ابتدائی قیمت</span>
+              <span class="pkg-price-amount" data-base-price="215000" data-i18n="pkg_economy_price">215,000 روپے</span>
+            </div>
+
+            <div class="pkg-card-buttons">
+              <button class="btn btn-primary btn-sm open-pkg-modal" data-package="Economy Umrah Package" data-i18n="btn_book_now">یہ پیکیج بک کریں</button>
+              <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20am%20interested%20in%20Economy%20Umrah%20Package" target="_blank" class="btn btn-whatsapp btn-sm">
+                <i class="fab fa-whatsapp"></i> <span data-i18n="btn_whatsapp_inquiry">واٹس ایپ</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 2: 4-Star Executive (Popular) -->
+        <div class="umrah-card popular" data-tilt>
+          <div class="popular-ribbon">Most Popular / سب سے پسندیدہ</div>
+          <div class="umrah-card-image">
+            <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=600&q=80" alt="Executive Umrah Package">
+          </div>
+          <div class="umrah-card-body">
+            <h3 class="umrah-card-title" data-i18n="pkg_star_title">4-اسٹار ایگزیکٹو عمرہ پیکیج</h3>
+            <div class="umrah-duration">
+              <i class="far fa-clock"></i>
+              <span data-i18n="pkg_star_days">15 دن / 14 راتیں</span>
+            </div>
+            
+            <div class="hotel-distance-box">
+              <div class="dist-item">
+                <i class="fas fa-kaaba"></i>
+                <span data-i18n="pkg_star_makkah">مکہ: صرف 250 میٹر پیدل فاصلہ حرم سے</span>
+              </div>
+              <div class="dist-item">
+                <i class="fas fa-mosque"></i>
+                <span data-i18n="pkg_star_madinah">مدینہ: صرف 150 میٹر مرکزیہ ہوٹل</span>
+              </div>
+            </div>
+
+            <ul class="pkg-features-list">
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="pkg_star_f1">سعودیہ ایئرلائنز / پی آئی اے ڈائریکٹ</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="pkg_star_f2">روزانہ مفت ناشتہ (بوفے)</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="pkg_star_f3">پرائیویٹ جی ایم سی یا ہائی ایس ٹرانسپورٹ</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="pkg_star_f4">24 گھنٹے گراؤنڈ ہیلپ اور معلم</span></li>
+            </ul>
+
+            <div class="pkg-pricing-box">
+              <span class="pkg-price-label" data-i18n="pkg_price_from">ابتدائی قیمت</span>
+              <span class="pkg-price-amount" data-base-price="340000" data-i18n="pkg_star_price">340,000 روپے</span>
+            </div>
+
+            <div class="pkg-card-buttons">
+              <button class="btn btn-gold btn-sm open-pkg-modal" data-package="4-Star Executive Umrah Package" data-i18n="btn_book_now">یہ پیکیج بک کریں</button>
+              <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20am%20interested%20in%204-Star%20Executive%20Umrah%20Package" target="_blank" class="btn btn-whatsapp btn-sm">
+                <i class="fab fa-whatsapp"></i> <span data-i18n="btn_whatsapp_inquiry">واٹس ایپ</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 3: 5-Star Royal VIP -->
+        <div class="umrah-card" data-tilt>
+          <div class="umrah-card-image">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" alt="VIP Umrah Package">
+          </div>
+          <div class="umrah-card-body">
+            <h3 class="umrah-card-title" data-i18n="pkg_vip_title">5-اسٹار رائل وی آئی پی پیکیج</h3>
+            <div class="umrah-duration">
+              <i class="far fa-clock"></i>
+              <span data-i18n="pkg_vip_days">10 دن / 9 راتیں</span>
+            </div>
+            
+            <div class="hotel-distance-box">
+              <div class="dist-item">
+                <i class="fas fa-kaaba"></i>
+                <span data-i18n="pkg_vip_makkah">مکہ: کلاک ٹاور / فرنٹ رو حرم ویو ہوٹل</span>
+              </div>
+              <div class="dist-item">
+                <i class="fas fa-mosque"></i>
+                <span data-i18n="pkg_vip_madinah">مدینہ: مسجد نبوی کے صحن کے سامنے 5-اسٹار ہوٹل</span>
+              </div>
+            </div>
+
+            <ul class="pkg-features-list">
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="pkg_vip_f1">بزنس یا پریمیم اکانومی ایئر ٹکٹ</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="pkg_vip_f2">ذاتی لگژری گاڑی (یوکون / مرسڈیز)</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="pkg_vip_f3">خصوصی معلم اور شخصی زیارات</span></li>
+              <li><i class="fas fa-check-circle"></i> <span data-i18n="pkg_vip_f4">فل بورڈ / ہاف بورڈ کھانا شامل</span></li>
+            </ul>
+
+            <div class="pkg-pricing-box">
+              <span class="pkg-price-label" data-i18n="pkg_price_from">ابتدائی قیمت</span>
+              <span class="pkg-price-amount" data-base-price="580000" data-i18n="pkg_vip_price">580,000 روپے</span>
+            </div>
+
+            <div class="pkg-card-buttons">
+              <button class="btn btn-primary btn-sm open-pkg-modal" data-package="5-Star Royal VIP Umrah Package" data-i18n="btn_book_now">یہ پیکیج بک کریں</button>
+              <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20am%20interested%20in%205-Star%20Royal%20VIP%20Umrah%20Package" target="_blank" class="btn btn-whatsapp btn-sm">
+                <i class="fab fa-whatsapp"></i> <span data-i18n="btn_whatsapp_inquiry">واٹس ایپ</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. TRENDING TOUR PACKAGES (INTERNATIONAL & DOMESTIC)
+       ========================================================================== -->
+  <section class="tours-section" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="tours_badge">منفرد سیاحتی مقامات</span>
+        <h2 class="section-title" data-i18n="tours_title">مشہور بین الاقوامی اور ملکی سیاحتی پیکیجز</h2>
+        <p class="section-subtitle" data-i18n="tours_subtitle">قدرتی حسن، پرسکون ساحل اور تاریخی عجائبات دیکھیں ہمارے مکمل انتظام شدہ شاندار ہالیڈے پیکیجز کے ساتھ۔</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-nav">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter_all">تمام مقامات</button>
+        <button class="filter-btn" data-filter="intl" data-i18n="filter_intl">بین الاقوامی ٹورز</button>
+        <button class="filter-btn" data-filter="domestic" data-i18n="filter_domestic">پاکستان کے شمالی علاقہ جات</button>
+        <button class="filter-btn" data-filter="honeymoon" data-i18n="filter_honeymoon">ہنیمون اسپیشل</button>
+      </div>
+
+      <div class="tours-grid">
+        <!-- Tour 1: Dubai -->
+        <div class="tour-card" data-category="intl">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Dubai Tour">
+            <span class="tour-tag">Dubai, UAE</span>
+            <span class="tour-duration-tag" data-i18n="tour1_days">5 دن / 4 راتیں</span>
+          </div>
+          <div class="tour-content">
+            <h3 class="tour-title" data-i18n="tour1_title">دبئی اور ابوظہبی پرتعیش ٹور</h3>
+            <p class="tour-desc" data-i18n="tour1_desc">برج خلیفہ، صحرائی جیپ سفاری مع باربی کیو ڈنر، میرینا کروز ڈنر، دبئی مال اور فراری ورلڈ کا وزٹ۔</p>
+            <div class="tour-bottom">
+              <span class="tour-price" data-base-price="145000" data-i18n="tour1_price">145,000 روپے + ویزا</span>
+              <button class="btn btn-primary btn-sm open-pkg-modal" data-package="Dubai & Abu Dhabi Tour" data-i18n="btn_book_now">بک کریں</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 2: Turkey -->
+        <div class="tour-card" data-category="intl">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=80" alt="Turkey Tour">
+            <span class="tour-tag">Turkey / ترکی</span>
+            <span class="tour-duration-tag" data-i18n="tour2_days">7 دن / 6 راتیں</span>
+          </div>
+          <div class="tour-content">
+            <h3 class="tour-title" data-i18n="tour2_title">ترکی کی تاریخی اور سحر انگیز سیر</h3>
+            <p class="tour-desc" data-i18n="tour2_desc">استنبول کی سیر، باسفورس کروز، نیلی مسجد، اور کیپاڈوکیا میں مشہور ہاٹ ایئر غباروں کی سواری۔</p>
+            <div class="tour-bottom">
+              <span class="tour-price" data-base-price="285000" data-i18n="tour2_price">285,000 روپے + ٹکٹ</span>
+              <button class="btn btn-primary btn-sm open-pkg-modal" data-package="Turkey Discovery Tour" data-i18n="btn_book_now">بک کریں</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 3: Skardu & Hunza -->
+        <div class="tour-card" data-category="domestic">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=600&q=80" alt="Hunza & Skardu">
+            <span class="tour-tag">Hunza & Skardu / شمالی علاقہ جات</span>
+            <span class="tour-duration-tag" data-i18n="tour3_days">8 دن / 7 راتیں</span>
+          </div>
+          <div class="tour-content">
+            <h3 class="tour-title" data-i18n="tour3_title">اسکردو اور وادی ہنزہ کی خوبصورت سیر</h3>
+            <p class="tour-desc" data-i18n="tour3_desc">شنگریلا ریزورٹ، اپر کچورا جھیل، عطا آباد جھیل، التیت اور بلتت قلعے، پاسو کونز اور خنجراب پاس۔</p>
+            <div class="tour-bottom">
+              <span class="tour-price" data-base-price="85000" data-i18n="tour3_price">85,000 روپے فی کس</span>
+              <button class="btn btn-primary btn-sm open-pkg-modal" data-package="Skardu & Hunza Valley Explorer" data-i18n="btn_book_now">بک کریں</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 4: Malaysia & Thailand -->
+        <div class="tour-card" data-category="honeymoon">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=600&q=80" alt="Malaysia & Thailand">
+            <span class="tour-tag">Malaysia & Thailand</span>
+            <span class="tour-duration-tag" data-i18n="tour4_days">8 دن / 7 راتیں</span>
+          </div>
+          <div class="tour-content">
+            <h3 class="tour-title" data-i18n="tour4_title">ملائیشیا اور تھائی لینڈ جوڑ ٹور</h3>
+            <p class="tour-desc" data-i18n="tour4_desc">کوالالمپور پیٹروناس ٹاورز، گینٹنگ ہائی لینڈز کیبل کار، بنکاک کے شاہی معابد اور پتایا کورل آئی لینڈ۔</p>
+            <div class="tour-bottom">
+              <span class="tour-price" data-base-price="210000" data-i18n="tour4_price">210,000 روپے + ویزا</span>
+              <button class="btn btn-primary btn-sm open-pkg-modal" data-package="Malaysia & Thailand Twin Tour" data-i18n="btn_book_now">بک کریں</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 5: Baku Azerbaijan -->
+        <div class="tour-card" data-category="intl">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1579606032822-0e96ce0ffc62?auto=format&fit=crop&w=600&q=80" alt="Baku Azerbaijan">
+            <span class="tour-tag">Baku / باکو، آذربائیجان</span>
+            <span class="tour-duration-tag" data-i18n="tour5_days">5 دن / 4 راتیں</span>
+          </div>
+          <div class="tour-content">
+            <h3 class="tour-title" data-i18n="tour5_title">باکو، آذربائیجان پرفضا ٹور</h3>
+            <p class="tour-desc" data-i18n="tour5_desc">فلیم ٹاورز، پرانا شہر اچری شہر، آتش گاہ ٹیمپل، گوبستان مڈ آتش فشاں اور شاہ داغ پہاڑی مقام۔</p>
+            <div class="tour-bottom">
+              <span class="tour-price" data-base-price="135000" data-i18n="tour5_price">135,000 روپے + ٹکٹ</span>
+              <button class="btn btn-primary btn-sm open-pkg-modal" data-package="Baku Azerbaijan Tour" data-i18n="btn_book_now">بک کریں</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tour 6: Fairy Meadows -->
+        <div class="tour-card" data-category="domestic">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Fairy Meadows">
+            <span class="tour-tag">Fairy Meadows / فیری میڈوز</span>
+            <span class="tour-duration-tag" data-i18n="tour6_days">6 دن / 5 راتیں</span>
+          </div>
+          <div class="tour-content">
+            <h3 class="tour-title" data-i18n="tour6_title">فیری میڈوز اور نانگا پربت ایڈونچر ٹریک</h3>
+            <p class="tour-desc" data-i18n="tour6_desc">تاتو تک جیپ سفر، فیری میڈوز کا سحر انگیز ٹریک، بیال کیمپ اور دنیا کے 9ویں بلند ترین پہاڑ کا نظارہ۔</p>
+            <div class="tour-bottom">
+              <span class="tour-price" data-base-price="65000" data-i18n="tour6_price">65,000 روپے فی کس</span>
+              <button class="btn btn-primary btn-sm open-pkg-modal" data-package="Fairy Meadows & Nanga Parbat Trek" data-i18n="btn_book_now">بک کریں</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. WORLDWIDE FLIGHT BOOKINGS & AIRLINE PARTNERS
+       ========================================================================== -->
+  <section class="flights-section" id="flights">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="flights_badge">عالمی ایئرلائنز ٹکٹنگ</span>
+        <h2 class="section-title" data-i18n="flights_title">فوری فلائٹ بکنگ اور خصوصی رعایتی کرایے</h2>
+        <p class="section-subtitle" data-i18n="flights_subtitle">دنیا کی تمام معروف ایئرلائنز کے ملکی و بین الاقوامی ٹکٹ انتہائی مناسب قیمت پر حاصل کریں۔</p>
+      </div>
+
+      <div class="flight-features-grid">
+        <div class="flight-box">
+          <div class="flight-icon"><i class="fas fa-percent"></i></div>
+          <h4 data-i18n="flight_feature1_title">سب سے کم کرایے کی گارنٹی</h4>
+          <p data-i18n="flight_feature1_desc">گلوبل جی ڈی ایس سسٹم سے سستے ترین کرایوں تک براہِ راست رسائی۔</p>
+        </div>
+        <div class="flight-box">
+          <div class="flight-icon"><i class="fas fa-exchange-alt"></i></div>
+          <h4 data-i18n="flight_feature2_title">آسان تاریخ میں تبدیلی اور کینسلیشن</h4>
+          <p data-i18n="flight_feature2_desc">ٹکٹ میں تاریخ کی فوری تبدیلی اور شفاف ریفنڈ پالیسی۔</p>
+        </div>
+        <div class="flight-box">
+          <div class="flight-icon"><i class="fas fa-suitcase-rolling"></i></div>
+          <h4 data-i18n="flight_feature3_title">اضافی سامان اور سیٹ کا انتخاب</h4>
+          <p data-i18n="flight_feature3_desc">من پسند نشست، حلال کھانا اور رعایتی نرخوں پر اضافی بیگیج کی سہولت۔</p>
+        </div>
+      </div>
+
+      <!-- Partner Airline Badges -->
+      <div class="airlines-banner">
+        <h4 data-i18n="partner_airlines">ہماری پارٹنر ایئرلائنز</h4>
+        <div class="airlines-grid">
+          <div class="airline-badge"><i class="fas fa-plane"></i> Pakistan International (PIA)</div>
+          <div class="airline-badge"><i class="fas fa-plane"></i> Saudia Airlines</div>
+          <div class="airline-badge"><i class="fas fa-plane"></i> Emirates Airline</div>
+          <div class="airline-badge"><i class="fas fa-plane"></i> Qatar Airways</div>
+          <div class="airline-badge"><i class="fas fa-plane"></i> Turkish Airlines</div>
+          <div class="airline-badge"><i class="fas fa-plane"></i> FlyDubai</div>
+          <div class="airline-badge"><i class="fas fa-plane"></i> AirBlue & SereneAir</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. VISA CONSULTANCY & SERVICES
+       ========================================================================== -->
+  <section class="visa-section" id="visas">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="visa_badge">بغیر کسی دشواری کے ویزا پروسیسنگ</span>
+        <h2 class="section-title" data-i18n="visa_title">عالمی ویزا کنسلٹنسی اور فائل تیاری</h2>
+        <p class="section-subtitle" data-i18n="visa_subtitle">ویزا کے مشکل طریقہ کار کو ہمارے ماہرین کے ساتھ آسان بنائیں۔ 98 فیصد سے زیادہ کامیابی کی شرح۔</p>
+      </div>
+
+      <div class="visa-grid">
+        <div class="visa-card">
+          <div class="visa-flag-icon"><i class="fas fa-city"></i></div>
+          <h3 class="visa-title" data-i18n="visa_dubai_title">دبئی / متحدہ عرب امارات وزٹ ویزا</h3>
+          <span class="visa-time" data-i18n="visa_dubai_time">14، 30 اور 60 دن | 24 تا 48 گھنٹے ایکسپریس سروس</span>
+          <div class="visa-btn">
+            <a href="#contact" class="btn btn-primary btn-sm btn-block" data-i18n="btn_request_visa">ویزا رہنمائی حاصل کریں</a>
+          </div>
+        </div>
+
+        <div class="visa-card">
+          <div class="visa-flag-icon"><i class="fas fa-kaaba"></i></div>
+          <h3 class="visa-title" data-i18n="visa_saudi_title">سعودی سیاحتی اور عمرہ ای ویزا</h3>
+          <span class="visa-time" data-i18n="visa_saudi_time">ایک سالہ ملٹیپل انٹری | فوری اجرا</span>
+          <div class="visa-btn">
+            <a href="#contact" class="btn btn-primary btn-sm btn-block" data-i18n="btn_request_visa">ویزا رہنمائی حاصل کریں</a>
+          </div>
+        </div>
+
+        <div class="visa-card">
+          <div class="visa-flag-icon"><i class="fas fa-monument"></i></div>
+          <h3 class="visa-title" data-i18n="visa_turkey_title">ترکی وزٹ ویزا اور اسٹیکر فائل</h3>
+          <span class="visa-time" data-i18n="visa_turkey_time">فائل کی تیاری، بینک اسٹیٹمنٹ جانچ اور اپائنٹمنٹ</span>
+          <div class="visa-btn">
+            <a href="#contact" class="btn btn-primary btn-sm btn-block" data-i18n="btn_request_visa">ویزا رہنمائی حاصل کریں</a>
+          </div>
+        </div>
+
+        <div class="visa-card">
+          <div class="visa-flag-icon"><i class="fas fa-landmark"></i></div>
+          <h3 class="visa-title" data-i18n="visa_schengen_title">برطانیہ، امریکہ، کینیڈا اور شینگن</h3>
+          <span class="visa-time" data-i18n="visa_schengen_time">ماہرانہ فائل پروسیسنگ، کور لیٹر اور انٹرویو گائیڈنس</span>
+          <div class="visa-btn">
+            <a href="#contact" class="btn btn-primary btn-sm btn-block" data-i18n="btn_request_visa">ویزا رہنمائی حاصل کریں</a>
+          </div>
+        </div>
+
+        <div class="visa-card">
+          <div class="visa-flag-icon"><i class="fas fa-tree"></i></div>
+          <h3 class="visa-title" data-i18n="visa_malaysia_title">ملائیشیا، تھائی لینڈ اور سنگاپور</h3>
+          <span class="visa-time" data-i18n="visa_malaysia_time">ای ویزا یا اسٹیکر ویزا، تصدیق شدہ ہوٹل واؤچرز</span>
+          <div class="visa-btn">
+            <a href="#contact" class="btn btn-primary btn-sm btn-block" data-i18n="btn_request_visa">ویزا رہنمائی حاصل کریں</a>
+          </div>
+        </div>
+
+        <div class="visa-card">
+          <div class="visa-flag-icon"><i class="fas fa-mountain"></i></div>
+          <h3 class="visa-title" data-i18n="visa_baku_title">آذربائیجان اور وسطی ایشیائی ممالک</h3>
+          <span class="visa-time" data-i18n="visa_baku_time">صرف 3 دن میں 100 فیصد گارنٹی کے ساتھ ای ویزا</span>
+          <div class="visa-btn">
+            <a href="#contact" class="btn btn-primary btn-sm btn-block" data-i18n="btn_request_visa">ویزا رہنمائی حاصل کریں</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. WHY CHOOSE US
+       ========================================================================== -->
+  <section class="why-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="why_badge">الحبیب کا منفرد معیار</span>
+        <h2 class="section-title" data-i18n="why_title">ہزاروں مسافر الحبیب ورلڈ پر اعتماد کیوں کرتے ہیں؟</h2>
+        <p class="section-subtitle" data-i18n="why_subtitle">ہم آپ کی حفاظت، آرام، اور پیسوں کی شفافیت کو اولین ترجیح دیتے ہیں۔</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4 class="why-title" data-i18n="why1_title">15 سال سے زیادہ کا قابلِ فخر تجربہ</h4>
+          <p class="why-desc" data-i18n="why1_desc">سیاحت اور زیارات کے شعبے میں طویل عرصے سے قابل اعتماد اور تسلی بخش خدمات۔</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-hand-holding-usd"></i></div>
+          <h4 class="why-title" data-i18n="why2_title">کوئی پوشیدہ اخراجات نہیں</h4>
+          <p class="why-desc" data-i18n="why2_desc">مکمل اور شفاف کوٹیشن جس میں تمام ٹیکسز اور لازمی فیسیں پہلے سے واضح ہوں۔</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-route"></i></div>
+          <h4 class="why-title" data-i18n="why3_title">آپ کی مرضی کے مطابق کسٹم پیکیجز</h4>
+          <p class="why-desc" data-i18n="why3_desc">آپ کے بجٹ، پسندیدہ تاریخوں اور فیملی کی ضروریات کے عین مطابق ترتیب دیے گئے پیکیجز۔</p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon"><i class="fas fa-file-invoice"></i></div>
+          <h4 class="why-title" data-i18n="why4_title">فوری ڈیجیٹل ٹکٹس اور واؤچرز</h4>
+          <p class="why-desc" data-i18n="why4_desc">اپنے ای ٹکٹس، ہوٹل بکنگ اور ویزا دستاویزات گھر بیٹھے واٹس ایپ اور ای میل پر حاصل کریں۔</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       12. DESTINATIONS PHOTO GALLERY
+       ========================================================================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="gallery_badge">تصویری جھلکیاں</span>
+        <h2 class="section-title" data-i18n="gallery_title">وہ دلکش مقامات جو آپ کے منتظر ہیں</h2>
+        <p class="section-subtitle" data-i18n="gallery_subtitle">مقدس اور حسین ترین مناظر کی تصویری سیر جو ہمارے صارفین نے تجربہ کیے۔</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item span-2">
+          <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80" alt="Holy Makkah">
+          <div class="gallery-overlay">
+            <div>
+              <h4>Makkah Al-Mukarramah / مکہ مکرمہ</h4>
+              <span data-i18n="gal_holy">مقدس مقامات</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1589182373726-e4f658ab50f0?auto=format&fit=crop&w=600&q=80" alt="Hunza Valley">
+          <div class="gallery-overlay">
+            <div>
+              <h4>Hunza Valley / وادی ہنزہ</h4>
+              <span data-i18n="gal_mountain">پہاڑ اور قدرتی مناظر</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="Dubai Marina">
+          <div class="gallery-overlay">
+            <div>
+              <h4>Dubai Marina / دبئی</h4>
+              <span data-i18n="gal_urban">جدید شہر</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=600&q=80" alt="Cappadocia Turkey">
+          <div class="gallery-overlay">
+            <div>
+              <h4>Cappadocia / کیپاڈوکیا ترکی</h4>
+              <span data-i18n="gal_mountain">تاریخی و قدرتی عجائبات</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=600&q=80" alt="Tropical Islands">
+          <div class="gallery-overlay">
+            <div>
+              <h4>Thailand Beaches / تھائی لینڈ جزائر</h4>
+              <span data-i18n="gal_beach">خوبصورت ساحل</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item span-2">
+          <img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=800&q=80" alt="Madinah Al-Munawwarah">
+          <div class="gallery-overlay">
+            <div>
+              <h4>Madinah Al-Munawwarah / مدینہ منورہ</h4>
+              <span data-i18n="gal_holy">مسجد نبوی الشریف</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       13. TESTIMONIALS & REVIEWS
+       ========================================================================== -->
+  <section class="testimonials-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="reviews_badge">ہمارے مسافروں کے تاثرات</span>
+        <h2 class="section-title" data-i18n="reviews_title">ہمارے قابلِ قدر کسٹمرز کیا کہتے ہیں؟</h2>
+        <p class="section-subtitle" data-i18n="reviews_subtitle">الحبیب ورلڈ کے ساتھ سفر کرنے والے خاندانوں اور افراد کے سچے تجربات۔</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text" data-i18n="rev1_text">"ہماری فیملی نے الحبیب ورلڈ ٹریول کے ذریعے عمرہ ادا کیا۔ مکہ میں ہوٹل حرم سے صرف 3 منٹ کی دوری پر تھا اور ٹرانسپورٹ انتہائی معیاری تھی۔ پوری ٹیم کا بہت شکریہ۔"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ح</div>
+            <div class="author-info">
+              <h5 data-i18n="rev1_author">حاجی محمد ارشد اور فیملی</h5>
+              <span data-i18n="rev1_location">لاہور، پاکستان (عمرہ زائرین)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text" data-i18n="rev2_text">"میں نے اپنی فیملی کے ساتھ 7 روزہ ترکی کا ٹور بک کیا۔ استنبول ایئرپورٹ پک اپ سے لے کر کیپاڈوکیا کے غار ہوٹل تک تمام انتظامات بے مثال تھے۔"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ب</div>
+            <div class="author-info">
+              <h5 data-i18n="rev2_author">ڈاکٹر بلال طارق</h5>
+              <span data-i18n="rev2_location">اسلام آباد، پاکستان (ترکی ٹور)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text" data-i18n="rev3_text">"مجھے فیملی کے دبئی وزٹ ویزا میں کافی پریشانی تھی، لیکن الحبیب کی ویزا ٹیم نے صرف 48 گھنٹوں میں چاروں ویزے جاری کروا دیے۔ لاجواب سروس!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ک</div>
+            <div class="author-info">
+              <h5 data-i18n="rev3_author">سید کامران علی</h5>
+              <span data-i18n="rev3_location">کراچی، پاکستان (دبئی وزٹ ویزا)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       14. FAQ ACCORDION SECTION
+       ========================================================================== -->
+  <section class="faq-section" id="faqs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge" data-i18n="faq_badge">کیا آپ کا کوئی سوال ہے؟</span>
+        <h2 class="section-title" data-i18n="faq_title">اکثر پوچھے جانے والے سوالات (FAQs)</h2>
+        <p class="section-subtitle" data-i18n="faq_subtitle">عمرہ پیکیجز، ایئر ٹکٹس، ویزا اور ہوٹل بکنگ کے متعلق اہم معلومات۔</p>
+      </div>
+
+      <div class="faq-wrapper">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span data-i18n="faq1_q">عمرہ پیکیج بک کروانے کے لئے کون سے کاغذات درکار ہوتے ہیں؟</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq1_a">عمرہ کے لئے کم از کم 6 ماہ کی میعاد والا پاسپورٹ، شناختی کارڈ کی کاپی اور سفید/نیلے بیک گراؤنڈ والی تصاویر درکار ہوتی ہیں۔ بائیو میٹرک اور ویزا اجرا کا سارا انتظام ہماری ٹیم کرتی ہے۔</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq2_q">کیا ہم اپنی مرضی اور بجٹ کے مطابق پیکیج کسٹمائز کروا سکتے ہیں؟</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq2_a">جی بالکل! ہم آپ کے بجٹ اور سہولت کے مطابق پیکیج تیار کرتے ہیں۔ آپ اپنی مرضی کی تاریخیں، 3، 4 یا 5 اسٹار ہوٹلز اور ٹرانسپورٹ منتخب کر سکتے ہیں۔</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq3_q">ٹکٹ کینسل کروانے یا تاریخ بدلنے کی کیا پالیسی ہے؟</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq3_a">ٹکٹ کی منسوخی یا تبدیلی متعلقہ ایئرلائن کے قوانین کے مطابق ہوتی ہے۔ ہماری ٹیم ایئرلائن کی شرائط کے مطابق کم سے کم کٹوتی پر فوری ریفنڈ کا بندوبست کرتی ہے۔</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span data-i18n="faq4_q">بیرونِ ملک ویزا کے لئے کتنے دن پہلے درخواست دینی چاہیے؟</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-i18n="faq4_a">دبئی، باکو اور ملائیشیا کے ای ویزا کے لئے 1 سے 2 ہفتے قبل جبکہ برطانیہ، امریکہ اور یورپ شینگن ویزا کے لئے سفر کی تاریخ سے کم از کم 6 سے 8 ہفتے پہلے اپلائی کرنا مناسب ہے۔</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       15. INTERACTIVE BOOKING / INQUIRY FORM
+       ========================================================================== -->
+  <section class="inquiry-section" id="contact">
+    <div class="container">
+      <div class="inquiry-card">
+        <div class="inquiry-header">
+          <span class="section-badge" data-i18n="form_badge">اپنے سفر کی تیاری کریں</span>
+          <h2 class="section-title" data-i18n="form_title">معلومات حاصل کریں یا مشاورتی فارم پر کریں</h2>
+          <p class="section-subtitle" data-i18n="form_subtitle">فارم پر کریں، ہمارے سینئر ٹریول کنسلٹنٹ صرف 30 منٹ میں آپ کو بہترین کوٹیشن کے ساتھ رابطہ کریں گے۔</p>
+        </div>
+
+        <form id="travelInquiryForm">
+          <div class="inquiry-form-grid">
+            <div class="form-group">
+              <label data-i18n="lbl_fullname">مکمل نام</label>
+              <input type="text" data-i18n-placeholder="ph_fullname" placeholder="اپنا نام درج کریں" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="lbl_phone">موبائل / واٹس ایپ نمبر</label>
+              <input type="tel" data-i18n-placeholder="ph_phone" placeholder="0300 1234567" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="lbl_email">ای میل ایڈریس</label>
+              <input type="email" data-i18n-placeholder="ph_email" placeholder="yourname@example.com" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="lbl_service">مطلوبہ سروس</label>
+              <select required>
+                <option value="" disabled selected data-i18n="opt_select_service">براہِ کرم سروس منتخب کریں</option>
+                <option value="umrah" data-i18n="opt_umrah">عمرہ / حج پیکیج</option>
+                <option value="intl_tour" data-i18n="opt_intl_tour">بین الاقوامی ٹور پیکیج</option>
+                <option value="domestic_tour" data-i18n="opt_domestic_tour">پاکستان / شمالی علاقہ جات ٹور</option>
+                <option value="flights" data-i18n="opt_flights">فضائی ٹکٹ بکنگ</option>
+                <option value="visa" data-i18n="opt_visa">ویزا پروسیسنگ اور کنسلٹنسی</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label data-i18n="lbl_travel_date">سفر کی متوقع تاریخ</label>
+              <input type="date">
+            </div>
+            <div class="form-group">
+              <label data-i18n="lbl_travelers">مسافروں کی تعداد</label>
+              <input type="number" min="1" max="100" value="1">
+            </div>
+            <div class="form-group form-full">
+              <label data-i18n="lbl_message">اضافی تفصیلات یا بجٹ</label>
+              <textarea data-i18n-placeholder="ph_message" placeholder="کمروں کی تعداد، بجٹ، یا اپنی کسی خاص ترجیح کے بارے میں بتائیں..."></textarea>
+            </div>
+            <div class="form-group form-full">
+              <button type="submit" class="btn btn-gold btn-block" style="padding: 16px;" data-i18n="btn_submit_inquiry">درخواست ارسال کریں</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="form-direct-call-box">
+          <span data-i18n="form_direct_call">براہِ راست بات کرنا چاہتے ہیں؟ ابھی کال ملائیں:</span>
+          <a href="tel:+923001234567">+92 300 1234567</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       16. NEWSLETTER SUBSCRIPTION
+       ========================================================================== -->
+  <section class="newsletter-section">
+    <div class="container newsletter-content">
+      <div class="newsletter-text">
+        <h3 data-i18n="news_title">خصوصی ڈسکاؤنٹ آفرز کی معلومات حاصل کریں</h3>
+        <p data-i18n="news_subtitle">سستے ایئر ٹکٹس، خصوصی عمرہ رعایتیں اور سیزنل ٹور آفرز براہِ راست اپنے ان باکس میں پائیں۔</p>
+      </div>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+        <input type="email" placeholder="Your Email Address..." required>
+        <button type="submit" data-i18n="btn_subscribe">سبسکرائب کریں</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       17. FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <!-- Col 1: About & Branches -->
+      <div class="footer-col">
+        <div class="footer-brand">
+          <h3 style="color: #fff; font-size: 1.4rem; font-weight: 800; margin-bottom: 4px;">AL HABIB</h3>
+          <span style="color: var(--accent-gold); font-size: 0.8rem; letter-spacing: 1px; font-weight: 700;">WORLD TRAVEL & TOURS</span>
+        </div>
+        <p class="footer-about-text" data-i18n="footer_about">الحبیب ورلڈ ٹریول اینڈ ٹورز ایک مستند اور مکمل ٹریول ایجنسی ہے جو دنیا بھر کے سفر، حج و عمرہ اور ویزا کے لئے بہترین اور شفاف خدمات پیش کرتی ہے۔</p>
+        <div class="footer-social-links">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://wa.me/923001234567" target="_blank" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div class="footer-col">
+        <h4 data-i18n="footer_quick_links">فوری لنکس</h4>
+        <ul class="footer-links-list">
+          <li><a href="#home"><i class="fas fa-angle-left icon-flip"></i> <span data-i18n="nav_home">صفحہ اول</span></a></li>
+          <li><a href="#about"><i class="fas fa-angle-left icon-flip"></i> <span data-i18n="nav_about">ہمارے بارے میں</span></a></li>
+          <li><a href="#calculator"><i class="fas fa-angle-left icon-flip"></i> <span data-i18n="nav_calc">خرچ کیلکولیٹر</span></a></li>
+          <li><a href="#umrah"><i class="fas fa-angle-left icon-flip"></i> <span data-i18n="nav_umrah">عمرہ و حج پیکیجز</span></a></li>
+          <li><a href="#packages"><i class="fas fa-angle-left icon-flip"></i> <span data-i18n="nav_packages">ٹور پیکیجز</span></a></li>
+          <li><a href="#flights"><i class="fas fa-angle-left icon-flip"></i> <span data-i18n="nav_flights">فضائی ٹکٹ</span></a></li>
+          <li><a href="#visas"><i class="fas fa-angle-left icon-flip"></i> <span data-i18n="nav_visas">ویزا سروسز</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Services -->
+      <div class="footer-col">
+        <h4 data-i18n="footer_services">ہماری بنیادی خدمات</h4>
+        <ul class="footer-links-list">
+          <li><a href="#umrah"><i class="fas fa-kaaba"></i> Economy Umrah Packages</a></li>
+          <li><a href="#umrah"><i class="fas fa-star"></i> 5-Star VIP Royal Umrah</a></li>
+          <li><a href="#flights"><i class="fas fa-ticket-alt"></i> Cheap Air Tickets</a></li>
+          <li><a href="#visas"><i class="fas fa-passport"></i> Dubai & Saudi e-Visas</a></li>
+          <li><a href="#packages"><i class="fas fa-mountain"></i> Northern Pakistan Tours</a></li>
+          <li><a href="#packages"><i class="fas fa-globe"></i> International Holidays</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact & Locations -->
+      <div class="footer-col">
+        <h4 data-i18n="footer_contact_info">مرکزی دفتر کے پتے و رابطے</h4>
+        <div class="footer-contact-items">
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span data-i18n="contact_address_val">آفس نمبر 402، چوتھی منزل، حبیب ایگزیکٹو سینٹر، مین بلیوارڈ، گلبرگ III، لاہور، پاکستان</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span data-i18n="contact_phone_val">1234567 300 92+ / 35789000 42 92+</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span data-i18n="contact_email_val">info@alhabibtravels.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-building"></i>
+            <span data-i18n="branch_islamabad">اسلام آباد برانچ: بلو ایریا، جناح ایونیو، اسلام آباد</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="container footer-bottom">
+      <div data-i18n="footer_rights">© 2026 جملہ حقوق محفوظ ہیں۔ الحبیب ورلڈ ٹریول اینڈ ٹورز۔</div>
+      <div>Designed with Luxury & Perfection for Al Habib World Travel</div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       PACKAGE DETAILS MODAL POPUP
+       ========================================================================== -->
+  <div class="modal-overlay" id="packageModal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="modalPackageTitle">Package Booking</h3>
+        <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="margin-bottom: 16px; color: var(--text-body);">Please submit your phone or WhatsApp number to receive complete price quotations, hotel names, and customized flight itineraries.</p>
+        <form onsubmit="event.preventDefault(); alert('Inquiry received! Our team will contact you shortly.'); document.getElementById('packageModal').classList.remove('open');">
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label>Your Name / آپ کا نام</label>
+            <input type="text" class="input-with-icon" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;" required>
+          </div>
+          <div class="form-group" style="margin-bottom: 14px;">
+            <label>WhatsApp / Phone Number</label>
+            <input type="tel" class="input-with-icon" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px;" placeholder="+92 300 1234567" required>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block">Confirm Inquiry / بکنگ تفصیلات حاصل کریں</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       INTERACTIVE WHATSAPP CONCIERGE WIDGET
+       ========================================================================== -->
+  <div class="whatsapp-widget-container">
+    <div class="whatsapp-chatbox" id="waChatbox">
+      <div class="chatbox-header">
+        <div class="chatbox-header-info">
+          <div class="chat-avatar">
+            <i class="fas fa-kaaba"></i>
+            <span class="chat-avatar-online"></span>
+          </div>
+          <div>
+            <div class="chat-name" data-i18n="chat_header_title">Al Habib Travel Concierge</div>
+            <div class="chat-status" data-i18n="chat_header_sub">Online | 24/7 Live Assistance</div>
+          </div>
+        </div>
+        <button class="chatbox-close" id="waCloseBtn">&times;</button>
+      </div>
+      <div class="chatbox-body">
+        <div class="chat-message-bubble" data-i18n="chat_welcome_msg">
+          Assalam-o-Alaikum! 🌟 Welcome to AL HABIB WORLD TRAVEL & TOURS. How can we make your travel smooth and memorable today?
+        </div>
+        <div class="chat-quick-options">
+          <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20want%20information%20about%20Umrah%20Packages%201448" target="_blank" class="chat-quick-btn" data-i18n="chat_opt_1">
+            🕌 Umrah & Hajj Packages 1448
+          </a>
+          <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20want%20to%20book%20a%20Cheap%20Flight%20Ticket" target="_blank" class="chat-quick-btn" data-i18n="chat_opt_2">
+            ✈️ Discounted Flight Tickets
+          </a>
+          <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20want%20information%20about%20Holiday%20Tours" target="_blank" class="chat-quick-btn" data-i18n="chat_opt_3">
+            🌍 International Holiday Tours
+          </a>
+          <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20need%20Visa%20Consultancy%20Support" target="_blank" class="chat-quick-btn" data-i18n="chat_opt_4">
+            📄 Dubai & Global Visa Support
+          </a>
+          <a href="https://wa.me/923001234567?text=Assalam-o-Alaikum,%20I%20would%20like%20to%20chat%20with%20a%20travel%20agent" target="_blank" class="chat-quick-btn" data-i18n="chat_opt_5">
+            💬 Chat Directly With An Agent
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Trigger Button -->
+    <button class="whatsapp-trigger-btn" id="waTriggerBtn" aria-label="Open WhatsApp Chat">
+      <div class="whatsapp-pulse-ring"></div>
+      <div class="whatsapp-unread-badge">1</div>
+      <i class="fab fa-whatsapp"></i>
+    </button>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/motion.js"></script>
+</body>
+</html>
